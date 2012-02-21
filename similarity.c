@@ -155,8 +155,7 @@ _PG_init(void)
 			0,
 			NULL,
 			NULL,
-            NULL,
-			NULL);
+            NULL);
 	DefineCustomRealVariable("pg_similarity.block_threshold",
 			"Sets the threshold used by the Block similarity function.",
 			"Valid range is 0.0 .. 1.0.",
@@ -168,8 +167,7 @@ _PG_init(void)
 			0,
 			NULL,
 			NULL,
-            NULL,
-			NULL);
+            NULL);
 	DefineCustomBoolVariable("pg_similarity.block_is_normalized",
 			"Sets if the result value is normalized or not.",
 			NULL,
@@ -179,8 +177,7 @@ _PG_init(void)
 			0,
 			NULL,
 			NULL,
-            NULL,
-			NULL);
+            NULL);
 
 	/* Cosine */
 	DefineCustomEnumVariable("pg_similarity.cosine_tokenizer",
@@ -193,8 +190,7 @@ _PG_init(void)
 			0,
 			NULL,
 			NULL,
-            NULL,
-			NULL);
+            NULL);
 	DefineCustomRealVariable("pg_similarity.cosine_threshold",
 			"Sets the threshold used by the Cosine similarity function.",
 			"Valid range is 0.0 .. 1.0.",
@@ -205,7 +201,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomBoolVariable("pg_similarity.cosine_is_normalized",
 			"Sets if the result value is normalized or not.",
@@ -214,7 +209,6 @@ _PG_init(void)
 			true,
 			PGC_USERSET,
 			0,
-			NULL,
 			NULL,
 			NULL);
 
@@ -228,7 +222,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomRealVariable("pg_similarity.dice_threshold",
 			"Sets the threshold used by the Dice similarity measure.",
@@ -240,7 +233,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomBoolVariable("pg_similarity.dice_is_normalized",
 			"Sets if the result value is normalized or not.",
@@ -249,7 +241,6 @@ _PG_init(void)
 			true,
 			PGC_USERSET,
 			0,
-			NULL,
 			NULL,
 			NULL);
 
@@ -263,7 +254,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomRealVariable("pg_similarity.euclidean_threshold",
 			"Sets the threshold used by the Euclidean similarity measure.",
@@ -275,7 +265,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomBoolVariable("pg_similarity.euclidean_is_normalized",
 			"Sets if the result value is normalized or not.",
@@ -284,7 +273,6 @@ _PG_init(void)
 			true,
 			PGC_USERSET,
 			0,
-			NULL,
 			NULL,
 			NULL);
 
@@ -299,7 +287,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomBoolVariable("pg_similarity.hamming_is_normalized",
 			"Sets if the result value is normalized or not.",
@@ -308,7 +295,6 @@ _PG_init(void)
 			true,
 			PGC_USERSET,
 			0,
-			NULL,
 			NULL,
 			NULL);
 
@@ -322,7 +308,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomRealVariable("pg_similarity.jaccard_threshold",
 			"Sets the threshold used by the Jaccard similarity measure.",
@@ -334,7 +319,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomBoolVariable("pg_similarity.jaccard_is_normalized",
 			"Sets if the result value is normalized or not.",
@@ -343,7 +327,6 @@ _PG_init(void)
 			true,
 			PGC_USERSET,
 			0,
-			NULL,
 			NULL,
 			NULL);
 
@@ -358,7 +341,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomBoolVariable("pg_similarity.jaro_is_normalized",
 			"Sets if the result value is normalized or not.",
@@ -367,7 +349,6 @@ _PG_init(void)
 			true,
 			PGC_USERSET,
 			0,
-			NULL,
 			NULL,
 			NULL);
 
@@ -382,7 +363,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomBoolVariable("pg_similarity.jarowinkler_is_normalized",
 			"Sets if the result value is normalized or not.",
@@ -391,7 +371,6 @@ _PG_init(void)
 			true,
 			PGC_USERSET,
 			0,
-			NULL,
 			NULL,
 			NULL);
 
@@ -406,7 +385,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomBoolVariable("pg_similarity.levenshtein_is_normalized",
 			"Sets if the result value is normalized or not.",
@@ -415,7 +393,6 @@ _PG_init(void)
 			true,
 			PGC_USERSET,
 			0,
-			NULL,
 			NULL,
 			NULL);
 
@@ -429,7 +406,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomRealVariable("pg_similarity.matching_threshold",
 			"Sets the threshold used by the Matching Coefficient similarity measure.",
@@ -441,7 +417,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomBoolVariable("pg_similarity.matching_is_normalized",
 			"Sets if the result value is normalized or not.",
@@ -450,7 +425,6 @@ _PG_init(void)
 			true,
 			PGC_USERSET,
 			0,
-			NULL,
 			NULL,
 			NULL);
 
@@ -464,7 +438,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomRealVariable("pg_similarity.mongeelkan_threshold",
 			"Sets the threshold used by the Monge-Elkan similarity measure.",
@@ -476,7 +449,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomBoolVariable("pg_similarity.mongeelkan_is_normalized",
 			"Sets if the result value is normalized or not.",
@@ -485,7 +457,6 @@ _PG_init(void)
 			true,
 			PGC_USERSET,
 			0,
-			NULL,
 			NULL,
 			NULL);
 
@@ -500,7 +471,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomBoolVariable("pg_similarity.nw_is_normalized",
 			"Sets if the result value is normalized or not.",
@@ -509,7 +479,6 @@ _PG_init(void)
 			true,
 			PGC_USERSET,
 			0,
-			NULL,
 			NULL,
 			NULL);
 	DefineCustomRealVariable("pg_similarity.nw_gap_penalty",
@@ -521,7 +490,6 @@ _PG_init(void)
 			LONG_MAX,
 			PGC_USERSET,
 			0,
-			NULL,
 			NULL,
 			NULL);
 
@@ -535,7 +503,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomRealVariable("pg_similarity.overlap_threshold",
 			"Sets the threshold used by the Overlap Coefficient similarity measure.",
@@ -547,7 +514,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomBoolVariable("pg_similarity.overlap_is_normalized",
 			"Sets if the result value is normalized or not.",
@@ -556,7 +522,6 @@ _PG_init(void)
 			true,
 			PGC_USERSET,
 			0,
-			NULL,
 			NULL,
 			NULL);
 
@@ -570,7 +535,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomRealVariable("pg_similarity.qgram_threshold",
 			"Sets the threshold used by the Q-Gram similarity function.",
@@ -582,7 +546,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomBoolVariable("pg_similarity.qgram_is_normalized",
 			"Sets if the result value is normalized or not.",
@@ -591,7 +554,6 @@ _PG_init(void)
 			true,
 			PGC_USERSET,
 			0,
-			NULL,
 			NULL,
 			NULL);
 
@@ -606,7 +568,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomBoolVariable("pg_similarity.sw_is_normalized",
 			"Sets if the result value is normalized or not.",
@@ -615,7 +576,6 @@ _PG_init(void)
 			true,
 			PGC_USERSET,
 			0,
-			NULL,
 			NULL,
 			NULL);
 
@@ -630,7 +590,6 @@ _PG_init(void)
 			PGC_USERSET,
 			0,
 			NULL,
-			NULL,
 			NULL);
 	DefineCustomBoolVariable("pg_similarity.swg_is_normalized",
 			"Sets if the result value is normalized or not.",
@@ -639,7 +598,6 @@ _PG_init(void)
 			true,
 			PGC_USERSET,
 			0,
-			NULL,
 			NULL,
 			NULL);
 }
